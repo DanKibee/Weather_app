@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/.vscode/style.css" />
+  </head>
+  <body>
+    <div id="coantainer">
+      <h1 id="heading">Weather App</h1>
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button id="weather_btn" onclick="weather_fn(document.getElementById('city-input').value)">
+        Get weather
+      </button>
+      <div id="weather_info">
+        <h2 id="city_name"></h2>
+        <p id="date"></p>
+        <img id="weather_icon" src="weather.jpeg" alt="weather Icon" />
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="windspeed"></p>
+      </div>
+    </div>
+    <script src="/.vscode/app.js"></script>
+  </body>
+</html>
